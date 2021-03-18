@@ -4,6 +4,7 @@ pipeline{
             image 'node'
         }
     }
+}
 
     stages{
         stage('install depedencies'){
@@ -19,9 +20,9 @@ pipeline{
         }
     }
 
-    stage('build'){
-        steps{
-            sh "npm run build"
-        }
-    }
+    // stage('build'){
+    //     steps{
+    //         sh "npm run build"
+    //     }
+    // }
 }
